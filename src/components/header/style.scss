@@ -1,0 +1,17 @@
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav {
+    &__list {
+      display: flex;
+    
+    }
+
+    &__link {
+      font-size: 32px;
+      font-family: "Open-Sans";
+    }
+  }
+}
