@@ -4,6 +4,7 @@ import { ReactComponent as GameLogo } from "../../assets/images/gameinfo/amongus
 import "./style.scss";
 import socials from "../utils/socialdata";
 import SocialItem from "./social";
+import Slider from "../slider/Slider";
 
 const Game = () => {
   return (
@@ -40,22 +41,31 @@ const Game = () => {
           <div className="game__bot">
             <p className="game__bot-title">Описание игры</p>
             <p className="game__bot-text">
-              Играйте онлайн или через локальный Wi-Fi с 4-15 игроками, пока вы пытаетесь подготовить свой космический
-              корабль к вылету, но будьте осторожны, так как один из них окажется самозванцем, стремящимся убить всех!
+              Играйте онлайн или через локальный Wi-Fi с 4-15 игроками, пока вы
+              пытаетесь подготовить свой космический корабль к вылету, но будьте
+              осторожны, так как один из них окажется самозванцем, стремящимся
+              убить всех!
             </p>
             <p className="game__bot-text">
-              Товарищи по команде могут победить, выполнив все задания или обнаружив и проголосовав за самозванца с
-              корабля.
+              Товарищи по команде могут победить, выполнив все задания или
+              обнаружив и проголосовав за самозванца с корабля.
             </p>
             <p className="game__bot-text">
-              Самозванец может использовать саботаж, чтобы вызвать хаос, упрощая убийства и улучшая алиби.
+              Самозванец может использовать саботаж, чтобы вызвать хаос, упрощая
+              убийства и улучшая алиби.
             </p>
           </div>
+          <Slider />
           <div className="game__social social">
             <p className="social__title">Социальные сети</p>
             <div className="social-list">
               {socials.map((elem, index) => (
-                <SocialItem logo={elem.logo} link={elem.link} alt={elem.alt} key={index} />
+                <SocialItem
+                  logo={elem.logo}
+                  link={elem.link}
+                  alt={elem.alt}
+                  key={index}
+                />
               ))}
             </div>
           </div>
