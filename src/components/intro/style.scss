@@ -1,4 +1,12 @@
 .intro {
+  padding: 200px 0 218px 0;
+  background-image: url("../../assets/images/bg-img.png");
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media (max-width: 1024px) {
+    background-image: url("../../assets/images/bg-mobile.png");
+  }
   &__title {
     max-width: 1375px;
     margin: 0 auto;
@@ -48,38 +56,20 @@
 
 @media only screen and (max-width: 992px) {
   .intro {
+    padding-top: 94px;
     &__title {
-      max-width: 700px;
+      max-width: 515px;
       font-size: 40px;
 
       span {
         font-size: 40px;
       }
     }
-
     &__subtitle {
       max-width: 740px;
       margin-top: 65px;
       font-size: 25px;
       line-height: 2.2;
-    }
-  }
-}
-
-@media only screen and (max-width: 576px) {
-  .intro {
-    &__title {
-      font-size: 28px;
-
-      span {
-        font-size: 28px;
-      }
-    }
-
-    &__subtitle {
-      margin-top: 40px;
-      font-size: 20px;
-      line-height: 1.8;
     }
   }
 }

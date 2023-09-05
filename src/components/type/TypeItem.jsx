@@ -1,5 +1,3 @@
-import "./style.scss";
-
 const TypeItem = ({ img, title, text }) => {
   return (
     <div className="type__item">

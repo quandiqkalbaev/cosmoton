@@ -43,15 +43,24 @@
 }
 @media only screen and (max-width: 1280px) {
   .advantage {
+    margin-top: 117px;
     &__inner {
+      padding: 0 33px 0 38px;
       display: flex;
       flex-direction: column;
     }
-    &__right{
-        margin: 42px auto 0;
+    &__list{
+      margin-top: 45px;
+      gap: 26px;
     }
-    &__item{
-    gap: 17px;
+    &__right {
+      margin: 42px auto 0;
+    }
+    &__item {
+      gap: 17px;
+      &-subtitle {
+        width: auto;
+      }
     }
   }
 }

@@ -1,4 +1,4 @@
-import TypeItem from "../type-item/TypeItem";
+import TypeItem from "./TypeItem";
 import TypeImg1 from "../../assets/images/type-item/icon-1.svg";
 import TypeImg2 from "../../assets/images/type-item/icon-2.svg";
 import TypeImg3 from "../../assets/images/type-item/icon-3.svg";

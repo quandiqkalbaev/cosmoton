@@ -1,5 +1,3 @@
-import "./style.scss";
-
 const WhyItem = ({ img, title, text }) => {
   return (
     <div className="why__item">

@@ -1,4 +1,4 @@
-import WhyItem from "../why-item/WhyItem";
+import WhyItem from "./WhyItem";
 
 import WhyImg1 from "../../assets/images/why/why-img-1.svg";
 import WhyImg2 from "../../assets/images/why/why-img-2.svg";

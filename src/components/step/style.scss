@@ -1,7 +1,7 @@
 .step {
   margin-top: 200px;
   &__title {
-    color: #000;
+    color: var(--black);
     text-align: center;
     font-size: 40px;
     font-weight: 700;
@@ -30,7 +30,7 @@
     align-items: center;
     position: relative;
     &-number {
-      background-color: #fff;
+      background-color: var(--white);
       border-radius: 50%;
       width: 54.25px;
       height: 49px;
@@ -120,8 +120,8 @@
 }
 @media only screen and (max-width: 1440px) {
   .step {
+    margin-top: 124px;
     &__inner {
-      
       width: 15px;
       height: 1151px;
       flex-direction: column;
