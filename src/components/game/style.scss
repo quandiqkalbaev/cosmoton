@@ -1,0 +1,168 @@
+.game {
+  background-image: url("../../assets/images/gameinfo/amongus.png");
+  background-size: 100% 512px;
+  background-repeat: no-repeat;
+  background-position: contain 0;
+  padding-bottom: 170px;
+  &__inner {
+    padding-top: 512px;
+    display: flex;
+    flex-direction: column;
+  }
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__btn {
+    width: 251px;
+    height: 111px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    border-radius: 20px;
+    background-color: #404042;
+    box-shadow: 0px -15px 0px 0px rgba(0, 0, 0, 0.25) inset;
+    filter: drop-shadow(0px 10px 20px rgba(0, 0, 0, 0.25));
+  }
+  &__info {
+    &-left {
+      width: 230px;
+      height: 230px;
+      margin-top: -56px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 30px;
+      background: #f9f9f9;
+      box-shadow: 5px 10px 30px 0px rgba(0, 0, 0, 0.25);
+    }
+    display: flex;
+    &-right {
+      margin-right: auto;
+      margin-top: 39px;
+      margin-left: 58px;
+    }
+  }
+  &__name {
+    display: flex;
+    align-items: center;
+    p {
+      color: #00111a;
+      text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+      font-family: Open Sans;
+      font-size: 50px;
+      font-weight: 700;
+    }
+  }
+  &__payment-info {
+    align-self: flex-end;
+    width: 176px;
+    height: 48px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background: #6c9eeb;
+    color: #fff;
+    text-align: center;
+    font-family: Open Sans;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    border-radius: 10px;
+  }
+  &__type-list {
+    display: flex;
+    margin-top: 25px;
+  }
+  &__type-item {
+    color: rgba(0, 17, 26, 0.5);
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    font-family: Open Sans;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 0.9px;
+    &:not(:first-child) {
+      list-style: disc;
+      margin-left: 40px;
+    }
+  }
+  &__bot {
+    margin-top: 40px;
+    &-title {
+      color: #00111a;
+      text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+      font-family: Open Sans;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+    }
+    &-text {
+      color: #00111a;
+      text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+      font-family: Open Sans;
+      font-size: 25px;
+      letter-spacing: 0.75px;
+      margin-top: 15px;
+      max-width: 1109px;
+    }
+  }
+  .social {
+    margin-top: 90px;
+    &__title {
+      color: #00111a;
+      text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+      font-family: Open Sans;
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: 0.9px;
+    }
+    &-list {
+      margin-top: 32px;
+    }
+    &__item {
+      width: 80px;
+      height: 80px;
+      display: inline-flex;
+      align-items: center;
+      &:not(:first-child) {
+        margin-left: 58px;
+      }
+    }
+  }
+}
+@media only screen and (max-width: 1170px) {
+  .game {
+    padding-bottom: 90px;
+    background-size: 100% 192px;
+    &__inner {
+      padding-top: 192px;
+    }
+    &__top {
+      flex-wrap: wrap;
+    }
+    &__info-right {
+      width: 100%;
+      order: 2;
+    }
+    &__info-left {
+      order: 0;
+    }
+
+    .social-list {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(4, 80px);
+      gap: 34px 58px;
+    }
+    .social__item:not(:first-child) {
+      margin-left: 0;
+    }
+  }
+}

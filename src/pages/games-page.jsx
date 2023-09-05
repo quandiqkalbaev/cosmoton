@@ -1,11 +1,11 @@
 import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
-import Catalog from "../components/catalog/catalog";
-export default function CatalogPage() {
+import Kind from "../components/kind/kind";
+export default function GameType() {
   return (
     <main>
       <Header />
-      <Catalog />
+      <Kind />
       <Footer />
     </main>
   );

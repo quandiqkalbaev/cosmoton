@@ -1,0 +1,38 @@
+.why {
+  margin-top: 210px;
+
+  &__title {
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: var(--black);
+
+    span {
+      color: var(--primary);
+
+      span {
+        color: var(--black);
+      }
+    }
+  }
+
+  &__items {
+    margin-top: 75px;
+    display: grid;
+    grid-template-columns: 360px 485px 360px;
+    gap: 142px;
+    grid-template-rows: auto;
+    justify-content: center;
+
+    @media (max-width: 1550px) {
+      gap: 30px;
+    }
+
+    @media (max-width: 1400px) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 75px;
+      align-items: center;
+    }
+  }
+}

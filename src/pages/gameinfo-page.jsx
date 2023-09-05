@@ -1,11 +1,11 @@
 import Footer from "../components/footer/footer";
+import Game from "../components/game/game";
 import Header from "../components/header/header";
-import Catalog from "../components/catalog/catalog";
-export default function CatalogPage() {
+export default function GameInfo() {
   return (
     <main>
       <Header />
-      <Catalog />
+      <Game />
       <Footer />
     </main>
   );
