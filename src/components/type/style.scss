@@ -5,8 +5,11 @@
     font-size: 40px;
     font-weight: 700;
 
-    @media (max-width: 992px) {
-      font-size: 35px;
+    @media (max-width: 1600px) {
+      font-size: 36px;
+    }
+    @media (max-width: 576px) {
+      font-size: 24px;
     }
   }
 
@@ -15,21 +18,24 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 86px;
-
-    @media (max-width: 1660px) {
+    @media (max-width: 1600px) {
+      grid-template-columns: repeat(4, 1fr);
       gap: 40px;
     }
 
-    @media (max-width: 1600px) {
-      grid-template-columns: repeat(2, 1fr);
-    }
-
-    @media (max-width: 992px) {
+    @media (max-width: 1140px) {
       margin-top: 55px;
       display: flex;
       flex-direction: column;
       align-items: center;
       row-gap: 60px;
+    }
+    @media (max-width: 1140px) {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 30px;
     }
   }
 }
@@ -38,17 +44,41 @@
   height: auto;
   display: flex;
   flex-direction: column;
-
+  align-items: center;
+  &:nth-child(1) {
+    .type__item-img {
+      img {
+        width: 75%;
+      }
+    }
+  }
+  &:nth-child(2) {
+    .type__item-img {
+      img {
+        width: 85%;
+      }
+    }
+  }
+  &:nth-child(4) {
+    .type__item-img {
+      img {
+        width: 85%;
+      }
+    }
+  }
   &-img {
     height: 154px;
+    width: 220px;
     display: flex;
-    align-items: flex-start;
+    align-items: centers;
     justify-content: center;
+    img {
+      object-fit: contain;
+      height: 100%;
+    }
 
-    @media (max-width: 1660px) {
-      max-width: 180px;
-      height: 135px;
-      margin: 0 auto;
+    @media (max-width: 576px) {
+      width: 40%;
     }
   }
 
@@ -61,10 +91,15 @@
   }
 
   &-title {
-    font-size: 30px;
+    font-size: 24px;
     font-weight: 600;
     text-align: center;
     color: var(--black);
+
+    @media (max-width: 1600px) {
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
   }
 
   &-text {
@@ -76,12 +111,13 @@
 
     @media (max-width: 1600px) {
       max-width: 360px;
-      margin: 15px auto 0;
+      font-size: 18px;
+      margin-top: auto;
     }
   }
 }
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 1140px) {
   .type__item {
     flex-direction: row;
     align-items: center;
@@ -97,6 +133,16 @@
 
     &-content {
       margin-top: 0;
+    }
+  }
+}
+@media only screen and (max-width: 576px) {
+  .type__item {
+    flex-direction: column;
+    align-items: center;
+    column-gap: 0;
+    &:nth-child(odd) {
+      flex-direction: column;
     }
   }
 }

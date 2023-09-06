@@ -5,8 +5,8 @@ export default function GameInfo() {
   return (
     <main>
       <Header />
-      <Game />
-      <Footer />
+      {/* <Game /> */}
+      {/* <Footer /> */}
     </main>
   );
 }

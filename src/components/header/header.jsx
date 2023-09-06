@@ -2,9 +2,22 @@ import "./style.scss";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
+import { useState } from "react";
 export default function Header() {
   const location = useLocation();
   const currentPath = location.pathname;
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleMenuToggle = () => {
+    setMenuOpen((prevState) => !prevState);
+  };
+
+  if (menuOpen) {
+    document.body.classList.add("no-scroll");
+  } else {
+    document.body.classList.remove("no-scroll");
+  }
   return (
     <header className="header">
       <div className="container">
@@ -13,7 +26,7 @@ export default function Header() {
             <Logo className="header__logo-img" />
             <span>CosmoTon</span>
           </Link>
-          <nav className="nav">
+          <nav className={menuOpen ? `nav nav--active` : `nav`}>
             <ul className="nav__list">
               <li
                 className={
@@ -36,6 +49,9 @@ export default function Header() {
               </li>
             </ul>
           </nav>
+          <div className={menuOpen ? `hamburger hamburger--active` : `hamburger`} onClick={handleMenuToggle}>
+            <span></span>
+          </div>
         </div>
       </div>
     </header>
