@@ -5,8 +5,8 @@ export default function CatalogPage() {
   return (
     <main>
       <Header />
-      {/* <Catalog /> */}
-      {/* <Footer /> */}
+      <Catalog />
+      <Footer />
     </main>
   );
 }

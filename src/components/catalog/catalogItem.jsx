@@ -10,7 +10,6 @@ const CatalogItem = ({ amount, type, about, img }) => {
           </div>
         </div>
         <div className="catalog__item-right">
-          <p className="catalog__item-count">{amount}</p>
           <p className="catalog__item-title">{type}</p>
           <p className="catalog__item-about">{about}</p>
         </div>

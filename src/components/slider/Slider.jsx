@@ -24,6 +24,9 @@ const Slider = () => {
           navigation={true}
           modules={[Navigation]}
           breakpoints={{
+            320: {
+              spaceBetween: 11,
+            },
             720: {
               spaceBetween: 21,
             },

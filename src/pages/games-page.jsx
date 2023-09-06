@@ -5,8 +5,8 @@ export default function GameType() {
   return (
     <main>
       <Header />
-      {/* <Kind /> */}
-      {/* <Footer /> */}
+      <Kind />
+      <Footer />
     </main>
   );
 }

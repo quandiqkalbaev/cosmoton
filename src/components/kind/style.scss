@@ -13,13 +13,12 @@
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 600;
-  }
-  &__amount {
-    margin-left: 50px;
-    color: rgba(0, 0, 0, 0.5);
-    font-family: Montserrat;
-    font-size: 50px;
-    font-weight: 700;
+    @media (max-width: 1600px) {
+      font-size: 36px;
+    }
+    @media (max-width: 576px) {
+      font-size: 24px;
+    }
   }
   &__about {
     display: block;
@@ -27,11 +26,17 @@
     font-size: 20px;
     font-weight: 400;
     margin-top: 13px;
+    @media (max-width: 1600px) {
+      font-size: 18px;
+    }
+    @media (max-width: 576px) {
+      font-size: 16px;
+    }
   }
   &__list {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 502px);
+    grid-template-columns: repeat(3, 1fr);
     gap: 57px 38px;
     margin-top: 50px;
   }
@@ -43,10 +48,14 @@
     border-radius: 30px;
     background: #f9f9f9;
     box-shadow: 5px 10px 30px 0px rgba(0, 0, 0, 0.25);
+    @media (max-width: 1600px) {
+      padding: 20px;
+    }
     &__top {
       display: flex;
       justify-content: center;
       img {
+        border-radius: 20px;
         width: 100%;
       }
     }
@@ -55,8 +64,24 @@
       display: flex;
       height: 100%;
     }
+    &__left {
+      min-width: 70px;
+      height: 70px;
+
+      @media (max-width: 576px) {
+        min-width: 50px;
+        height: 60px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
     &__right {
       margin-left: 23px;
+      @media (max-width: 1600px) {
+        margin-left: 15px;
+      }
     }
     &__title {
       color: #00111a;
@@ -65,6 +90,12 @@
       font-size: 25px;
       font-weight: 400;
       letter-spacing: 0.75px;
+      @media (max-width: 1600px) {
+        font-size: 20px;
+      }
+      @media (max-width: 576px) {
+        font-size: 16px;
+      }
     }
     &__subtitle {
       color: rgba(0, 17, 26, 0.6);
@@ -73,16 +104,16 @@
       font-size: 18px;
       font-weight: 400;
       letter-spacing: 0.54px;
+      @media (max-width: 1600px) {
+        font-size: 16px;
+      }
+      @media (max-width: 576px) {
+        font-size: 12px;
+      }
     }
   }
 }
-@media only screen and (max-width: 1600px) {
-  .kind {
-    &__list {
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-}
+
 @media only screen and (max-width: 1200px) {
   .kind {
     &__list {
@@ -104,27 +135,13 @@
 
 @media only screen and (max-width: 600px) {
   .kind {
-    &__title {
-      font-size: 30px;
-    }
-    &__amount {
-      font-size: 35px;
-    }
-    &__subtitle {
-      font-size: 18px;
-    }
-  }
-}
-
-@media only screen and (max-width: 600px) {
-  .kind {
     &__list {
       margin-top: 30px;
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
     .app {
-      border-radius: 10px;
+      border-radius: 20px;
       padding: 10px 15px;
       &__title {
         font-size: 18px;

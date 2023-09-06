@@ -9,9 +9,8 @@ const Kind = () => {
         <div className="kind__inner">
           <div className="kind__top">
             <h2 className="kind__title">Казуальные игры</h2>
-            <p className="kind__amount">6</p>
           </div>
-            <p className="kind__about">Игры для широкой аудитории. Разные простые игры.</p>
+          <p className="kind__about">Игры для широкой аудитории. Разные простые игры.</p>
           <div className="kind__bot">
             <ul className="kind__list">
               {appData.map((elem, index) => (
