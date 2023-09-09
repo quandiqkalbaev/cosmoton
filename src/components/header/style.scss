@@ -220,6 +220,11 @@
       }
     }
     &__lang {
+      &-selected{
+        &:hover{
+          background-color: initial;
+        }
+      }
       margin-left: auto;
     }
   }
