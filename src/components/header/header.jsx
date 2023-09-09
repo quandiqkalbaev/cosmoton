@@ -42,9 +42,7 @@ export default function Header() {
             <ul className="nav__list">
               <li
                 className={
-                  currentPath === "/game" || currentPath === "/catalog"
-                    ? `nav__item nav__item-active`
-                    : `nav__item`
+                  currentPath === "/game" || currentPath === "/catalog" ? `nav__item nav__item-active` : `nav__item`
                 }
               >
                 <Link to="/catalog" className="nav__link">
