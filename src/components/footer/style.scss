@@ -36,7 +36,11 @@
       font-size: 25px;
       font-weight: 400;
       @media (max-width: 1600px) {
-        font-size: 20px;
+        font-size: 18px;
+        margin-top: 25px;
+      }
+      @media (max-width: 576px) {
+        font-size: 16px;
       }
     }
   }
@@ -45,15 +49,18 @@
     flex-direction: column;
     align-items: center;
     &-title {
-      min-height: 65px;
       min-width: 153px;
       font-size: 30px;
       font-weight: 700;
-      min-height: 65px;
+      min-height: 55px;
       display: flex;
       align-items: center;
       @media (max-width: 1600px) {
-        font-size: 24px;
+        font-size: 20px;
+      }
+      @media (max-width: 1200px) {
+        min-height: 35px;
+        margin: 12px 0;
       }
     }
   }
@@ -64,7 +71,7 @@
     margin-top: 10px;
     &-item {
       img {
-        width: 50px;
+        width: 40px;
       }
     }
     &-item:not(:first-child) {
@@ -72,18 +79,26 @@
     }
   }
   &__list {
+    margin: 18px 0;
+
     &-item {
       display: flex;
       align-items: center;
       font-size: 25px;
       font-weight: 500;
-      min-height: 65px;
       min-width: 153px;
-      @media (max-width: 1600px) {
-        font-size: 20px;
+      &:not(:first-child) {
+        margin-top: 30px;
+        @media (max-width: 1200px) {
+          margin-top: 0;
+        }
       }
-      @media (max-width: 567px) {
+      @media (max-width: 1600px) {
+        font-size: 18px;
+      }
+      @media (max-width: 576px) {
         min-width: auto;
+        font-size: 16px;
       }
     }
 
@@ -92,18 +107,24 @@
         margin-left: 20px;
       }
     }
+    @media (max-width: 1200px) {
+      margin: 5px 0;
+    }
   }
   &__bottom {
-    margin-top: 63px;
+    padding-top: 43px;
+    border-top: 1px solid rgb(202, 202, 202);
   }
   &__copyright {
     color: rgba(0, 0, 0, 0.5);
     font-size: 25px;
     font-weight: 500;
     @media (max-width: 1600px) {
-      font-size: 20px;
+      font-size: 16px;
     }
     @media (max-width: 576px) {
+      font-size: 12px;
+
       text-align: center;
     }
   }
@@ -115,14 +136,13 @@
       flex-direction: column;
     }
     &__item {
-      margin-top: 34px;
       align-items: flex-start;
     }
     &__list {
       display: flex;
     }
     &__social {
-      margin-top: 12px;
+      margin: 8px 0 12px;
       &-item:last-child {
         display: none;
       }

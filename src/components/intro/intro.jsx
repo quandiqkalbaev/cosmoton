@@ -7,7 +7,7 @@ const Intro = () => {
       <div className="container">
         <div className="intro__inner">
           <h1 className="intro__title">
-            Мы создаем единое игровое пространство в <span>Telegram</span> на
+            Eдиное игровое пространство в <span>Telegram</span> на
             базе <span>TON</span>
           </h1>
           <p className="intro__subtitle">

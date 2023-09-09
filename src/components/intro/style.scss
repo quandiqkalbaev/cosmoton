@@ -1,9 +1,10 @@
 .intro {
-  padding: 100px 0 218px 0;
+  padding: 150px 0 218px 0;
   background-image: url("../../assets/images/bg-img.png");
   background-position: 0 0;
   background-size: contain;
   background-repeat: no-repeat;
+  min-height: calc(100vh - 78px);
   @media (max-width: 1024px) {
     background-image: url("../../assets/images/bg-mobile.png");
   }
@@ -20,23 +21,39 @@
     text-align: center;
     @media (max-width: 1600px) {
       max-width: 800px;
-      font-size: 36px;
+      font-size: 48px;
     }
     @media (max-width: 576px) {
-      font-size: 24px;
+      font-size: 30px;
       max-width: 400px;
-
     }
     span {
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       font-size: 60px;
-      color: #009bde;
+      position: relative;
+      display: inline-block;
+      background: linear-gradient(88.93deg, #2689e8 18.91%, #03cfc2 79.91%);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      &::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: #000;
+      }
+      &:nth-child(1) {
+        @media (max-width: 576px) {
+          display: block;
+        }
+      }
       @media (max-width: 1600px) {
-        font-size: 36px;
+        font-size: 48px;
       }
       @media (max-width: 576px) {
-        font-size: 24px;
+        font-size: 30px;
       }
     }
   }
@@ -55,8 +72,8 @@
       margin-top: 15px;
     }
     @media (max-width: 1600px) {
-      font-size: 18px;
-      margin-top: 15px;
+      font-size: 16px;
+      margin-top: 30px;
     }
   }
 

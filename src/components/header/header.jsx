@@ -2,6 +2,7 @@ import "./style.scss";
 import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
+import { ReactComponent as LangIcon } from "../../assets/images/lang.svg";
 import { useState } from "react";
 export default function Header() {
   const location = useLocation();
@@ -18,6 +19,11 @@ export default function Header() {
   } else {
     document.body.classList.remove("no-scroll");
   }
+
+
+
+
+  
   return (
     <header className="header">
       <div className="container">
@@ -49,6 +55,18 @@ export default function Header() {
               </li>
             </ul>
           </nav>
+          <div className="header__lang">
+            <div className="header__lang-selected">
+              <span>
+                <LangIcon />
+              </span>
+              <p>Eng</p>
+            </div>
+            <div className="header__lang-items">
+              <p className="header__lang-item">Русский</p>
+              <p className="header__lang-item">English</p>
+            </div>
+          </div>
           <div className={menuOpen ? `hamburger hamburger--active` : `hamburger`} onClick={handleMenuToggle}>
             <span></span>
           </div>

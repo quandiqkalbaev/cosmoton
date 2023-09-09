@@ -3,6 +3,7 @@ import Footer from "../components/footer/footer";
 import Header from "../components/header/header";
 import Intro from "../components/intro/intro";
 import Step from "../components/step/step";
+import Support from "../components/support/support";
 import Type from "../components/type/Type";
 import Why from "../components/why/Why";
 
@@ -14,7 +15,8 @@ export default function HomePage() {
       <Type />
       <Step />
       <Why />
-      <Advantage />
+      <Support/>
+      {/* <Advantage /> */}
       <Footer />
     </main>
   );
