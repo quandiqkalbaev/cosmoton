@@ -5,7 +5,7 @@ const Step = () => {
       <div className="container">
         <div className="step__wrapper">
             <h2 className="step__title">
-            Как быстро запустить монетизацию вместе с CosmoTon 
+            Как быстро запустить монетизацию вместе с <span>CosmoTon</span>
             </h2>
           <div className="step__inner">
             <div className="step__item step__item-1">

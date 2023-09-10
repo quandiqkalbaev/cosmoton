@@ -1,11 +1,12 @@
-import tgLogo from "../../assets/images/gameinfo/tg-social.svg";
-import instaLogo from "../../assets/images/gameinfo/insta-social.svg";
-import vkLogo from "../../assets/images/gameinfo/vk-social.svg";
-import twitLogo from "../../assets/images/gameinfo/twitter-social.svg";
-import fbookLogo from "../../assets/images/gameinfo/facebook-social.svg";
-import mailLogo from "../../assets/images/gameinfo/mail-social.svg";
-import wappLogo from "../../assets/images/gameinfo/wapp-social.svg";
-import ttLogo from "../../assets/images/gameinfo/tt-social.svg";
+import wappLogo from "../../assets/images/footer/whatsapp.svg";
+import tgLogo from "../../assets/images/footer/telegram.svg";
+import mailLogo from "../../assets/images/footer/gmail.svg";
+import instaLogo from "../../assets/images/footer/instagram.svg";
+import fbookLogo from "../../assets/images/footer/facebook.svg";
+import twitLogo from "../../assets/images/footer/twitter.svg";
+import youtubeLogo from "../../assets/images/footer/youtube.svg";
+import ttlogo from "../../assets/images/footer/tt.svg";
+
 let socials = [
   {
     logo: tgLogo,
@@ -15,11 +16,6 @@ let socials = [
   {
     logo: instaLogo,
     alt: "instaLogo",
-    link: "/",
-  },
-  {
-    logo: vkLogo,
-    alt: "vkLogo",
     link: "/",
   },
   {
@@ -43,7 +39,12 @@ let socials = [
     link: "/",
   },
   {
-    logo: ttLogo,
+    logo: youtubeLogo,
+    alt: "youtubeLogo",
+    link: "/",
+  },
+  {
+    logo: ttlogo,
     alt: "ttLogo",
     link: "/",
   },

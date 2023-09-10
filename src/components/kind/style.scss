@@ -1,6 +1,5 @@
 .kind {
   margin-top: 100px;
-  padding-bottom: 20px;
   &__inner {
     display: flex;
     flex-direction: column;
@@ -13,22 +12,19 @@
     font-family: Montserrat;
     font-size: 40px;
     font-weight: 600;
-    @media (max-width: 1600px) {
-      font-size: 36px;
+    @media (max-width: 1024px) {
+      font-size: 28px;
     }
     @media (max-width: 576px) {
-      font-size: 24px;
+      font-size: 20px;
     }
   }
   &__about {
     display: block;
     font-family: Montserrat;
-    font-size: 20px;
     font-weight: 400;
     margin-top: 13px;
-    @media (max-width: 1600px) {
-      font-size: 18px;
-    }
+    font-size: 18px;
     @media (max-width: 576px) {
       font-size: 16px;
     }
@@ -36,8 +32,8 @@
   &__list {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     margin-top: 50px;
   }
   .app {
@@ -57,28 +53,21 @@
       }
     }
     &__bot {
-      margin-top: 20px;
+      margin-top: 15px;
       display: flex;
       height: 100%;
     }
     &__left {
-      min-width: 65px;
-      height: 65px;
+      min-width: 55px;
+      height: 55px;
 
-      @media (max-width: 576px) {
-        min-width: 50px;
-        height: 60px;
-      }
       img {
         width: 100%;
         height: 100%;
       }
     }
     &__right {
-      margin-left: 25px;
-      @media (max-width: 576px) {
-        margin-left: 15px;
-      }
+      margin-left: 15px;
     }
     &__title {
       color: #00111a;
@@ -97,8 +86,12 @@
       font-family: Open Sans;
       font-weight: 400;
       letter-spacing: 0.54px;
-      font-size: 14px;
-      margin-top: 5px;
+      font-size: 13px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
       @media (max-width: 576px) {
         font-size: 12px;
       }
@@ -109,28 +102,31 @@
 @media only screen and (max-width: 1200px) {
   .kind {
     &__list {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
 @media only screen and (max-width: 1024px) {
   .kind {
-    margin-top: 43px;
-    padding-bottom: 0;
-
     &__list {
-      grid-template-columns: repeat(1, 502px);
-      gap: 41px;
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }
-
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .kind {
     &__list {
-      margin-top: 30px;
       grid-template-columns: repeat(1, 1fr);
       gap: 20px;
     }
   }
 }
+
+// @media only screen and (max-width: 600px) {
+//   .kind {
+//     &__list {
+//       grid-template-columns: repeat(1, 1fr);
+//       gap: 20px;
+//     }
+//   }
+// }

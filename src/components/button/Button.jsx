@@ -4,7 +4,7 @@ import "./style.scss";
 export default function Button({ children }) {
   return (
     <button className="button">
-      <PolygonIcon className="button__icon" />
+      {/* <PolygonIcon className="button__icon" /> */}
       {children}
     </button>
   );

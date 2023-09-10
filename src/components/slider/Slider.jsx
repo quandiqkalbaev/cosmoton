@@ -19,7 +19,7 @@ const Slider = () => {
       <div className="slider__wrapper">
         <Swiper
           slidesPerView={"auto"}
-          spaceBetween={42}
+          spaceBetween={31}
           className="mySwiper"
           navigation={true}
           modules={[Navigation]}
