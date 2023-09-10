@@ -10,9 +10,7 @@ const Type = () => {
   return (
     <section className="type">
       <div className="container">
-        <h2 className="type__title">
-        Запускайте вместе с нами разные категории игры
-        </h2>
+        <h2 className="type__title">Запускайте вместе с нами разные категории игры</h2>
         <div className="type__items">
           <TypeItem
             img={TypeImg1}
