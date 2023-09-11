@@ -49,9 +49,9 @@
           display: block;
         }
       }
-      &:nth-child(2) {
-     display: block;
-      }
+    //   &:nth-child(2) {
+    //  display: block;
+    //   }
       img {
         @media (max-width: 1024px) {
           width: 60px;

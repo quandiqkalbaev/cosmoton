@@ -17,7 +17,7 @@ const Support = () => {
               <div className="support__item-info">
                 <p className="support__item-title">Техническая поддержка</p>
                 <p className="support__item-text">
-                  Участники TGA созваниваются каждую неделю и могут помочь с трудностями при интеграции, техническими и
+                  Участники COSMO GAME созваниваются каждую неделю и могут помочь с трудностями при интеграции, техническими и
                   бизнес-вопросами.
                 </p>
               </div>
@@ -29,7 +29,7 @@ const Support = () => {
               <div className="support__item-info">
                 <p className="support__item-title">Маркетинговая поддержка</p>
                 <p className="support__item-text">
-                  TGA поможет обеспечить охват в social media, когда ваша игра будет готова к запуску.
+                  COSMO GAME поможет обеспечить охват в social media, когда ваша игра будет готова к запуску.
                 </p>
               </div>
             </div>
@@ -40,7 +40,7 @@ const Support = () => {
               <div className="support__item-info">
                 <p className="support__item-title">Гранты и нетворкинг</p>
                 <p className="support__item-text">
-                  После первых результатов запуска участники TGA смогут помочь в масштабировании игры с помощью грантов
+                  После первых результатов запуска участники COSMO GAME смогут помочь в масштабировании игры с помощью грантов
                   на Telegram Ads, публикаций и нетворкинга.
                 </p>
               </div>
@@ -52,7 +52,7 @@ const Support = () => {
               <div className="support__item-info">
                 <p className="support__item-title">Инвестиции и контакты</p>
                 <p className="support__item-text">
-                  Если ваша игра уже имеет значительную аудиторию, участники TGA могут проинвестировать в неё или
+                  Если ваша игра уже имеет значительную аудиторию, участники COSMO GAME могут проинвестировать в неё или
                   познакомить вас с венчурными фондами.
                 </p>
               </div>

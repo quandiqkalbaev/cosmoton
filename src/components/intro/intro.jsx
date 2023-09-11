@@ -11,18 +11,18 @@ const Intro = () => {
           <h1 className="intro__title">
             Сделайте запуск своей
             <span>
-            <img src={gamepadIcon} alt="gamepad-icon" />
-              
-              игры</span>
-            успешным вместе с
+              <img src={gamepadIcon} alt="gamepad-icon" />
+              игры
+            </span>
+            успешным  <br />
+             вместе с
             <span>
               <img src={tgIcon} alt="tg-icon" />
               Telegram
             </span>
+            <br />
             на блокчейне
-            <span>
-              TON
-            </span>
+            <span>TON</span>
           </h1>
           <p className="intro__subtitle">
             Получите доступ к аудитории в 800 млн пользователей Telegram и начните монетизацию своего проекта вместе с
