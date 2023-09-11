@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { ReactComponent as Logo } from "../../assets/images/logo.svg";
+import { ReactComponent as BotLogo } from "../../assets/images/footer-logo.svg";
 import "./style.scss";
 import SocialItem from "./socialItem";
 export default function Footer() {
@@ -24,7 +25,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="footer__item">
-              <p className="footer__item-title">Для разработчиков игр</p>
+              <p className="footer__item-title">Разработчикам</p>
               <div className="footer__list">
                 <Link className="footer__list-item" to="/">
                   Запросить демонстрацию
@@ -55,7 +56,7 @@ export default function Footer() {
               </div>
             </div>
             <div className="footer__item">
-              <p className="footer__item-title">Связаться с нами</p>
+              <p className="footer__item-title">Сообщество</p>
               <div className="footer__list">
                 <Link className="footer__list-item" to="/">
                   Telegram-чат
@@ -77,8 +78,11 @@ export default function Footer() {
           <div className="footer__bottom">
             <div className="footer__copyright">
               На основе
-              <Logo className="footer__copyright-logo" /> COSMOTON.Авторское право 2023 ©. Все права защищены
+              <BotLogo className="footer__copyright-logo" /> TON.
             </div>
+            <p className="footer__privacy">
+            Авторское право 2023 ©. Все права защищены
+            </p>
             <div className="footer__socials">
               <SocialItem />
             </div>

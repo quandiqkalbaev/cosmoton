@@ -4,9 +4,14 @@ const Step = () => {
     <div className="step">
       <div className="container">
         <div className="step__wrapper">
-            <h2 className="step__title">
-            Как быстро запустить монетизацию вместе с <span>CosmoTon</span>
-            </h2>
+          <h2 className="step__title">
+            Запустить монетизацию вместе с
+            {" "}
+            <span>
+              {" "}
+              COSMO <span className="line">|</span> TON
+            </span>
+          </h2>
           <div className="step__inner">
             <div className="step__item step__item-1">
               <p className="step__item-number">1</p>

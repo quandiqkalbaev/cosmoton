@@ -9,20 +9,24 @@ const Intro = () => {
       <div className="container">
         <div className="intro__inner">
           <h1 className="intro__title">
-            Сделайте запуск своей игры успешным вместе с
+            Сделайте запуск своей
+            <span>
+            <img src={gamepadIcon} alt="gamepad-icon" />
+              
+              игры</span>
+            успешным вместе с
             <span>
               <img src={tgIcon} alt="tg-icon" />
               Telegram
             </span>
             на блокчейне
             <span>
-              <img src={gamepadIcon} alt="gamepad-icon" />
               TON
             </span>
           </h1>
           <p className="intro__subtitle">
             Получите доступ к аудитории в 800 млн пользователей Telegram и начните монетизацию своего проекта вместе с
-            COSMOTON?
+            COSMOTON
           </p>
           <div className="intro__btn">
             <Button>Создать проект</Button>

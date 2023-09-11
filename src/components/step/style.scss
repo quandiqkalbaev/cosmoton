@@ -6,11 +6,15 @@
     font-size: 40px;
     font-weight: 700;
     span {
+      
       display: inline-block;
       background: linear-gradient(88.93deg, #2689e8 18.91%, #03cfc2 79.91%);
       background-clip: text;
       -webkit-background-clip: text;
       color: transparent;
+    }
+    .line {
+      color: var(--black);
     }
     @media (max-width: 1024px) {
       text-align: center;
