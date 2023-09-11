@@ -84,4 +84,9 @@
       font-size: 14px;
     }
   }
+  &:nth-child(2){
+    .why__item-text{
+      white-space: pre-line;
+    }
+  }
 }
